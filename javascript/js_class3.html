@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>js</title>
+    </head>
+
+    <body>
+        <h1>JS Class</h1>
+        <p id="demo"></p> 
+        <p id="demo1"></p> 
+        <p id="demo2"></p>
+        
+        <script>
+           class student{
+                constructor(name,age){
+                    this.studentname=name;
+                    this.stuage=age;
+                }
+
+                showname()
+                {
+                    return "student name is : "+ this.studentname;
+                }
+           }
+
+           class subject extends student{
+               constructor(name,sub){
+                   super(name);
+                   this.subject=sub;
+               }
+               showdeatils()
+               {
+                   return this.showname()+" ,He/She takes "+this.subject;
+               }
+           }
+           let student1=new subject("Ravi","Maths");
+           let student2=new student("kumar",19);
+           document.getElementById("demo").innerHTML=student1.showdeatils();
+           document.getElementById("demo1").innerHTML=student2.showname();
+           document.getElementById("demo2").innerHTML=student2.showdeatils();
+
+           
+        </script>
+
+        
+    </body>
+</html>

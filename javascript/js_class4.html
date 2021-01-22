@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>js</title>
+    </head>
+
+    <body>
+        <h1>JS Class</h1>
+        <p id="demo"></p> 
+        <p id="demo1"></p> 
+        <p id="demo2"></p>
+        
+        <script>
+           class student{
+               constructor(name){
+               this.studentname=name;
+               }
+               get stuname(){
+                   return this.studentname;
+               }
+
+               set stuname(x){
+                   this.studentname=x;
+               }
+           }
+
+           let student1=new student("Raj");
+           document.getElementById("demo").innerHTML=student1.stuname;
+           
+        </script>
+
+        
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>js</title>
+    </head>
+
+    <body>
+        <h1>condition</h1>
+        <p id="demo"></p> 
+        <p id="demo1"></p> 
+        
+        <script>
+            //var friends=new Array(20,30,40,50)
+            var friends=["Niru","Thanu","Kiri","Jana"];
+            var tag="<ol>";
+                for(var i=0;i<friends.length;i++)
+                {
+                    tag+="<li>"+friends[i]+"</li>"
+                }
+                tag+="</ol>"
+            document.getElementById("demo").innerHTML=tag;
+            //document.getElementById("demo1").innerHTML=friends[3];
+
+        </script>
+
+        
+    </body>
+</html>

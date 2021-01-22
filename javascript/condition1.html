@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>js</title>
+    </head>
+
+    <body>
+        <h1>condition</h1>
+        <p id="demo"></p> 
+        
+        <script>
+           /* var grade="B";
+            var Message;
+            switch(grade)
+            {
+                case'A':
+                Message="very good score";
+                break;
+                case'B':
+                Message="good score";
+                break;
+                case'C':
+                Message="Average score";
+                break;
+                default:
+                Message="poor";
+
+            }
+            document.getElementById("demo").innerHTML=Message;*/
+
+            var day;
+            var dayno=new Date().getDay();
+            switch(dayno)
+            {
+                case 0:
+                case 6:
+                day="This is weekends";
+                break;
+                case 1:
+                case 2:
+                case 3:
+                day="This is weekdays";
+                break;
+                case 4:
+                case 5:
+                day="Soon it weekend";
+                break;
+            }
+            document.getElementById("demo").innerHTML=day;
+        </script>
+
+        
+    </body>
+</html>

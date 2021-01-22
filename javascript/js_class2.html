@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>js</title>
+    </head>
+
+    <body>
+        <h1>JS Class</h1>
+        <p id="demo"></p> 
+        <p id="demo1"></p> 
+        
+        <script>
+           class friend{
+               constructor(fname,lname,byear){
+                   this.fname=fname;
+                   this.lname=lname;
+                   this.age=byear;
+               }
+               fullname(){
+                   return this.fname+" "+this.lname;
+               }
+               age(x){
+                   return x-this.byear;
+               }
+           }
+           let date=new Date();
+           let year=date.getFullYear();
+           friend1=new friend("Thanu","Mohan",1999);
+           friend2=new friend("Kiri","Varun",2002);
+           document.getElementById("demo").innerHTML=friend1.fullname()+" "+friend1.age(2020);
+           document.getElementById("demo1").innerHTML=friend2.fullname()+" "+friend2.age(2021);
+
+        </script>
+
+        
+    </body>
+</html>
